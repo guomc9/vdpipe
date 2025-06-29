@@ -279,8 +279,8 @@ def main():
     parser.add_argument('-i', "--input_dir", type=str, required=True, help="Input directory of video chunks.")
     parser.add_argument('-o', "--output_dir", type=str, required=True, help="Output directory for detected shots.")
     parser.add_argument('-n', "--num_workers", type=int, default=multiprocessing.cpu_count(), help="Number of parallel workers (default: all CPU cores).")
-    parser.add_argument('-t', "--threshold", type=float, default=28.0, 
-                        help="Detection sensitivity threshold for ContentDetector (default: 28.0).\n"
+    parser.add_argument('-t', "--threshold", type=float, default=20.0, 
+                        help="Detection sensitivity threshold for ContentDetector (default: 20.0).\n"
                              "Lower values are more sensitive, higher values are less sensitive.")
     parser.add_argument("--min_frame_len", type=int, default=24, help="Minimum shot length in frames (default: 24).")
     args = parser.parse_args()
