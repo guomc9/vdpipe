@@ -190,6 +190,7 @@ from functools import partial
 from tqdm import tqdm
 import subprocess
 import shutil
+import sys
 
 # PySceneDetect is the core library for scene detection.
 from scenedetect import open_video, SceneManager
